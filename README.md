@@ -1,3 +1,5 @@
+
+https://github.com/yosuashp/binar-car-rental/assets/64104610/d3814b2f-896b-4db0-8a85-f1ee1f587833
 # SYNRGY - Car Management Dashboard
 
 Aplikasi web menggunakan express, cloudinary, knex, dan postgres untuk melakukan fungsi CRUD. Dibuat dengan tujuan untuk memenuhi challenge chapter 5 pada learning path Fullstack Web Development di Binar Academy. Design pada Aplikasi ini dibuat berdasarkan [Car-Management-Dashboard-Figma](https://www.figma.com/file/QiNXZPX7OwUeFzqSPuiQBE/BCR---Binar-Car-Rental?type=design&node-id=18343-5831&mode=design&t=ChhDUoaZb8FmFWPk-0)
@@ -88,6 +90,6 @@ Akses halaman front-end dan back-end
 
 # Demo APP
 
-Uploading 2023-11-09 12-30-50.mp4…
+https://github.com/yosuashp/binar-car-rental/assets/64104610/a8d00099-39be-4571-b169-6a5209e914bd
 
 

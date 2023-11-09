@@ -100,4 +100,4 @@ Jika ingin mengubah API Client Cloudinary terdapat pada folder 'src/handler/clou
   secure: true
 ```
 
-Untuk mendapatkan konfigurasi diatas silahakn kunjungin [cloudinary](https://console.cloudinary.com/pm/c-8658ff03fff67c57fd39d10af19494/media-explorer)
+Untuk mendapatkan konfigurasi diatas silahkan kunjungi [cloudinary](https://console.cloudinary.com/pm/c-8658ff03fff67c57fd39d10af19494/media-explorer)

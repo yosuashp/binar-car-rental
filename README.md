@@ -10,16 +10,18 @@ Dibutuhkan teknologi dibawah ini sudah terinstall dengan baik
 
 # Clone APP
 Ikuti langkah-langkah berikut
-- Clone repository [Car-Management-Dashboard](https://github.com/yosuashp/binar-car-rental.git)
-- git checkout -b Car-Management-Dashboard
-- git pull origin Car-Management-Dashboard
+```bash
+    Clone repository https://github.com/yosuashp/binar-car-rental.git
+    git checkout -b Car-Management-Dashboard
+    git pull origin Car-Management-Dashboard
+```
 
 # Install App
 Car-Management-Dashboard
 1. Install Postgres Server 
 2. Install PgAdmin4
 3. Install NPM
- 
+
 ## Install Postgres Server via Docker Engine
 ```bash
   docker-compose -f docker-compose.yaml --env-file .env up -d

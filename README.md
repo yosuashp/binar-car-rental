@@ -6,7 +6,8 @@ Aplikasi web menggunakan express, cloudinary, knex, dan postgres untuk melakukan
 Dibutuhkan teknologi dibawah ini sudah terinstall dengan baik
 - Node.js
 - Docker Engine
-
+- Docker Compose
+- Linux
 
 # Clone APP
 Ikuti langkah-langkah berikut
@@ -22,21 +23,44 @@ Car-Management-Dashboard
 2. Install PgAdmin4
 3. Install NPM
 
-## Install Postgres Server via Docker Engine
+## Install Postgres Server via Docker
 ```bash
   docker-compose -f docker-compose.yaml --env-file .env up -d
 ```
-## Install PgAdmin4 Postgres via Docker Engine
+## Install PgAdmin4 Postgres via Docker
 ```bash
     docker-compose -f docker-compose.yaml --env-file .env --profile debug up -d
 ```
 ## Install Packages
+Masuk terminal terlebih dahulu
 ```bash
    npm install
 ```
-## Run PgAdmin4 via Browser
+# Access App
+Pastikan postgres berjalan menggunakan docker, untuk mengeceknya masukan command 'docker ps -a' pada terminal maka akan dua image yang berjalan yaitu 'dpage/pgadmin4' dan 'postgres:14.1-alpine'
+1. Access postgres database
+2. Running App
+
+## Access PgAdmin4 via Browser
+Akses halaman pgadmin4 via browser
 ```bash
    http://127.0.0.1:55432/
    Username: postgres@example.com
    Password: password
+```
+lalu buat database dengan nama
+```bash
+   car-management-sahat
+```
+## Running App
+Akses halaman front-end dan back-end
+1. Migrate Terlebih dahul Tables yang sudah dibuat
+```bash
+   npm run migrate:sahat
+```
+2. Pastikan file connection_database.js yang berada di folder src/handler/db-handler/config/connection tidak diubah
+
+3. Jalankan server
+```bash
+   npm run start
 ```

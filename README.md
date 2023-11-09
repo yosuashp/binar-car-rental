@@ -50,17 +50,30 @@ Akses halaman pgadmin4 via browser
 ```
 lalu buat database dengan nama
 ```bash
-   car-management-sahat
+   car-manage-sahat
 ```
 ## Running App
 Akses halaman front-end dan back-end
-1. Migrate Terlebih dahul Tables yang sudah dibuat
+1. Migrate terlebih dahulu tables yang sudah dibuat
 ```bash
    npm run migrate:sahat
 ```
-2. Pastikan file connection_database.js yang berada di folder src/handler/db-handler/config/connection tidak diubah
+2. Pastikan file 'connection_database.js yang berada di folder 'src/handler/db-handler/config/connection' tidak diubah
 
 3. Jalankan server
 ```bash
    npm run start
 ```
+4. Akses website
+```bash
+   http://localhost:2908/
+```
+# Endpoint and Routing
+1. Front-end
+2. Back-end
+
+#### Front-End
+
+| Page | Route    | Links Routes                |
+| :-------- | :------- | :------------------------- |
+| `Home` | `/` | 'http://localhost:2908/'|

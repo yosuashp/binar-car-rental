@@ -78,6 +78,7 @@ Akses halaman front-end dan back-end
 | :-------- | :------- | :------------------------- |
 | `Home` | `/` | http://localhost:2908/|
 | `Add Car` | `/add` | http://localhost:2908/add|
-| `Edit Car` | `/edit?id{carId}` | http://localhost:2908//edit?id{carId}|
+| `Edit Car` | `/edit?id{carId}` | http://localhost:2908/edit?id{carId}|
 
-## API Endpoint
+## Documentation API
+[Endpoint API Documentation Car-Management-Dashboard](https://documenter.getpostman.com/view/30942070/2s9YXiYgSf)

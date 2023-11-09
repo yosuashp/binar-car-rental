@@ -84,5 +84,10 @@ Akses halaman front-end dan back-end
 [Endpoint API Documentation Car-Management-Dashboard](https://documenter.getpostman.com/view/30942070/2s9YXiYgSf)
 
 # Schema Database
+![db-diagram](https://github.com/yosuashp/binar-car-rental/assets/64104610/67f826f5-9a1f-4ced-90ef-dfd13a675b28)
 
 # Demo APP
+
+Uploading 2023-11-09 12-30-50.mp4…
+
+

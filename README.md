@@ -72,8 +72,10 @@ Akses halaman front-end dan back-end
 1. Front-end
 2. Back-end
 
-#### Front-End
+#### Front-End Routes
 
 | Page | Route    | Links Routes                |
 | :-------- | :------- | :------------------------- |
 | `Home` | `/` | 'http://localhost:2908/'|
+| `Add Car` | `/add` | 'http://localhost:2908/add'|
+| `Edit Car` | `/edit?id{carID}` | 'http://localhost:2908//edit?id{carID}'|

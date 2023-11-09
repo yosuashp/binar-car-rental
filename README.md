@@ -30,3 +30,13 @@ Car-Management-Dashboard
 ```bash
     docker-compose -f docker-compose.yaml --env-file .env --profile debug up -d
 ```
+## Install Packages
+```bash
+   npm install
+```
+## Run PgAdmin4 via Browser
+```bash
+   http://127.0.0.1:55432/
+   Username: postgres@example.com
+   Password: password
+```

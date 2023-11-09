@@ -1,6 +1,6 @@
 # SYNRGY - Car Management Dashboard
 
-Aplikasi web menggunakan express, cloudinary, knex, dan postgres untuk melakukan fungsi CRUD. Dibuat dengan tujuan untuk memenuhi challenge chapter 5 pada learning path Fullstack Web Development di Binar Academy. Design pada Aplikasi ini dibuat berdasarkan [Car-Management-Dashboard-Figma](https://www.figma.com/file/QiNXZPX7OwUeFzqSPuiQBE/BCR---Binar-Car-Rental?type=design&node-id=18343-5831&mode=design&t=ChhDUoaZb8FmFWPk-0)
+Aplikasi web menggunakan express, cloudinary, knex, dan postgres untuk melakukan fungsi CRUD. Dibuat dengan tujuan untuk memenuhi challenge chapter 5 pada learning path Fullstack Web Development di Binar Academy. Design pada Aplikasi ini dibuat berdasarkan [Car-Management-Dashboard-Figma](https://www.figma.com/proto/H6xTtBW9Kzlf09nYnitvbH/BCR---Car-Management-Dashboard?node-id=18344-7128&scaling=scale-down-width&page-id=18343%3A5831&starting-point-node-id=18344%3A7128&hide-ui=1)
 
 # Prerequisites
 Dibutuhkan teknologi dibawah ini sudah terinstall dengan baik

@@ -37,7 +37,7 @@ Masuk terminal terlebih dahulu
    npm install
 ```
 # Access App
-Pastikan postgres berjalan menggunakan docker, untuk mengeceknya masukan command 'docker ps -a' pada terminal maka akan dua image yang berjalan yaitu 'dpage/pgadmin4' dan 'postgres:14.1-alpine'
+Pastikan postgres berjalan menggunakan docker, untuk mengeceknya masukan command 'docker ps -a' pada terminal maka akan dua image yang berjalan yaitu 'dpage/pgadmin4' dan 'postgres:14.1-alpine'. Dan selanjutnya akan melakukan langkah berikut:
 1. Access postgres database
 2. Running App
 

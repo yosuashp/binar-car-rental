@@ -90,7 +90,7 @@ Akses halaman front-end dan back-end
 
 https://github.com/yosuashp/binar-car-rental/assets/64104610/a8d00099-39be-4571-b169-6a5209e914bd
 
-# Cloudinary Configurastion
+# Cloudinary Configuration
 Jika ingin mengubah API Client Cloudinary terdapat pada folder 'src/handler/cloudinary.js'. Ubah parameter berikut
 
 ```bash

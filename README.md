@@ -47,9 +47,11 @@ Membuat database dan tabel terlebih dahulu menggunakan sequellize
   "password": "sahat85"
 }
 ```
+untuk mengubah informasi password, username, dan email superadmin terdapat di /config/superadmin.js dan jangan lupa untuk menghapus database terlebih dahulu lalu lakukan migrate dan seedeer menggunakan perintah no 2
+
 ## Documentation API
-[Endpoint API Documentation POSTMAN Car-Management-API](https://documenter.getpostman.com/view/30942070/2s9YeD6rq8)
-[Endpoint API Documentation SWAGGER UI Car-Management-API](https://localhost:8000/api-docs)
+- [Endpoint API Documentation POSTMAN Car-Management-API](https://documenter.getpostman.com/view/30942070/2s9YeD6rq8)
+- [Endpoint API Documentation SWAGGER UI Car-Management-API](https://localhost:8000/api-docs)
 
 # Schema Database
 ![db-diagram](https://github.com/yosuashp/binar-car-rental/assets/64104610/67f826f5-9a1f-4ced-90ef-dfd13a675b28)

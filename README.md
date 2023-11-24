@@ -51,7 +51,7 @@ untuk mengubah informasi password, username, dan email superadmin terdapat di /c
 
 ## Documentation API
 - [Endpoint API Documentation POSTMAN Car-Management-API](https://documenter.getpostman.com/view/30942070/2s9YeD6rq8)
-- [Endpoint API Documentation SWAGGER UI Car-Management-API](https://localhost:8000/api-docs)
+- [Endpoint API Documentation SWAGGER UI Car-Management-API](http://localhost:8000/api-docs)
 
 # Schema Database
 ![relational-db](https://github.com/yosuashp/binar-car-rental/assets/64104610/31a97e36-79bb-4623-9d5b-b35d0aad73e4)

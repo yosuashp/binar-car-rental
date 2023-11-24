@@ -54,7 +54,8 @@ untuk mengubah informasi password, username, dan email superadmin terdapat di /c
 - [Endpoint API Documentation SWAGGER UI Car-Management-API](https://localhost:8000/api-docs)
 
 # Schema Database
-![db-diagram](https://github.com/yosuashp/binar-car-rental/assets/64104610/67f826f5-9a1f-4ced-90ef-dfd13a675b28)
+![db-diagram]![relational-db](https://github.com/yosuashp/binar-car-rental/assets/64104610/31a97e36-79bb-4623-9d5b-b35d0aad73e4)
+
 
 # Cloudinary Configuration
 Jika ingin mengubah API Client Cloudinary terdapat pada folder '/config/cloudinary.js'. Ubah parameter berikut

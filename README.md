@@ -24,7 +24,7 @@ Masuk terminal terlebih dahulu dan jalankan perintah berikut
 Membuat database dan tabel terlebih dahulu menggunakan sequellize
 1. Pastikan file 'config/database.js' sudah disesuaikan dengan potgres yang sudah terinstall di local
 
-2. Migrate dan create terlebih dahulu database yang akan digunakan
+2. Migrate, create dan seede terlebih dahulu database yang akan digunakan
 ```bash
    npm run build:sahat
 ```

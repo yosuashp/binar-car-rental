@@ -1157,7 +1157,7 @@
                                             "example": "Create car data successfully"
                                         },
                                         "data": {
-                                            "$ref": "#/components/schemas/CarRequest"
+                                            "$ref": "#/components/schemas/CarRequests"
                                         }
                                     }
                                 }
@@ -1926,6 +1926,48 @@
                     "password": {
                         "type": "string",
                         "example": "yosua12345678"
+                    }
+                }
+            },
+            "CarRequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "example": "toyota camry"
+                    },
+                    "size": {
+                        "type": "string",
+                        "example": "medium"
+                    },
+                    "rent_per_day": {
+                        "type": "integer",
+                        "example": 1900000
+                    },
+                    "image_id": {
+                        "type": "integer",
+                        "example": 1
+                    }
+                }
+            },
+            "CarRequests": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "example": "Sample Car"
+                    },
+                    "size": {
+                        "type": "string",
+                        "example": "medium"
+                    },
+                    "rent_per_day": {
+                        "type": "integer",
+                        "example": 50000
+                    },
+                    "image_id": {
+                        "type": "integer",
+                        "example": 1
                     }
                 }
             },

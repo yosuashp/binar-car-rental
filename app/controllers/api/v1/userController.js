@@ -165,6 +165,55 @@ module.exports = {
             status: "success",
             message: "Server is running smoothly.",
         });
-    }
+    },
+
+    async update(req, res) {
+        try {
+            if (isNaN(req.params.id)) throw new Error("Invalid parameter");
+            const id = req.params.id;
+            const car = await userService.get(id)
+            if (!car) {
+                res.status(404).json({
+                    status: "failed",
+                    message: "User data not found"
+                })
+            } else {
+                const allowedUpdate = ["name", "email", "password"]
+                for (const key of Object.keys(req.body)) {
+                    if (!allowedUpdate.includes(key)) {
+                        res.status(422).json({
+                            status: "failed",
+                            message: "Invalid field",
+                        })
+                        return
+                    }
+                }
+                userService
+                    .update(req.params.id, req.user, req.body)
+                    .then(() => {
+                        res.status(200).json({
+                            status: "success",
+                            message: "Update User data successfully",
+                            data: {
+                                name: req.user.name,
+                                email: req.user.email,
+                                role: req.user.role,
+                            }
+                        });
+                    })
+                    .catch((err) => {
+                        res.status(500).json({
+                            status: "error",
+                            message: err.message,
+                        });
+                    });
+            }
+        } catch (err) {
+            res.status(422).json({
+                status: "failed",
+                message: err.message,
+            });
+        }
+    },
     
 }

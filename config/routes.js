@@ -28,6 +28,9 @@ apiRouter.get(["/api/v1/detailuser", "/api/detailuser"],
     controllers.api.v1.authController.authorizeMember,
     controllers.api.v1.userController.whoAmI);
 
+apiRouter.put(["/api/v1/user/:id", "/api/user/:id"],
+    controllers.api.v1.authController.authorizeMember,
+    controllers.api.v1.userController.update);
 // * Admin auth
 apiRouter.get(["/api/v1/users", "/api/users"],
     controllers.api.v1.authController.authorizeAdmin,

@@ -10,6 +10,13 @@ module.exports = {
         return userRepository.delete(id);
     },
 
+    update(id, user, requestBody) {
+        return userRepository.update(id, {
+            ...requestBody,
+            updatedByUser: user.id
+        });
+    },
+
     async list() {
         try {
             const users = await userRepository.findAll();

@@ -651,6 +651,107 @@
                         }
                     }
                 }
+            },
+            "put": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Edit user by ID",
+                "operationId": "editUserData",
+                "description": "Modify user data based on the car ID \n\n Allowed roles: superadmin, admin and member",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "Id",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "required": true,
+                        "description": "Numeric ID of the user to edit"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Allowed fields to update: [name, email, password]",
+                    "content": {
+                        "aplication/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "example": "success"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Update User data successfully"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized, bearer token invalid or auth level below admin",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UnauthorizedMsg"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found, car Id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "example": "failed"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Car data not found"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity, check parameter format / allowed fields",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/InvalidParamMsg"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Default error response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DefaultErrMsg"
+                                }
+                            }
+                        }
+                    }
+                }
             }
         },
       
@@ -1811,32 +1912,20 @@
                     }
                 }
             },
-            "CarRequest": {
+            "UserRequest": {
                 "type": "object",
                 "properties": {
-                    "id": {
-                        "type": "integer",
-                        "example": 4
-                    },
                     "name": {
                         "type": "string",
-                        "example": "Sample Car"
+                        "example": "sahat bandung"
                     },
-                    "size": {
+                    "email": {
                         "type": "string",
-                        "enum": [
-                            "small",
-                            "medium",
-                            "large"
-                        ]
+                        "example": "sahatparulian@gmail.com"
                     },
-                    "rent_per_day": {
-                        "type": "integer",
-                        "example": 50000
-                    },
-                    "image_id": {
-                        "type": "integer",
-                        "example": 1
+                    "password": {
+                        "type": "string",
+                        "example": "yosua12345678"
                     }
                 }
             },

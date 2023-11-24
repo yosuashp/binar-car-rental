@@ -28,4 +28,13 @@ module.exports = {
     getTotalUser() {
         return User.count();
     },
+
+    update(id, updateArgs) {
+        return User.update(updateArgs, {
+            where: {
+                id,
+            },
+            paranoid: false
+        });
+    },
 };
